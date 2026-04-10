@@ -1,20 +1,11 @@
 <!DOCTYPE html>
-<!-- Declaração do tipo de documento HTML5 -->
 <html lang="pt-BR">
 <head>
-  <!-- Define o conjunto de caracteres para suportar acentuação e símbolos -->
   <meta charset="UTF-8">
-
-  <!-- Faz o site se adaptar a diferentes tamanhos de tela (responsivo) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Título exibido na aba do navegador -->
   <title>Nosso Amor ❤️</title>
 
   <style>
-    /* =========================
-       ESTILO GERAL DA PÁGINA
-       ========================= */
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
@@ -23,7 +14,7 @@
       justify-content: center;
       align-items: center;
 
-      /* IMPORTANTE PARA MOBILE */
+
       min-height: 100vh; /* Permite crescer se o conteúdo for maior */
       padding: 20px; /* Espaço nas bordas do celular */
 
@@ -31,9 +22,8 @@
       color: #fff;
     }
 
-    /* =========================
-       CAIXA PRINCIPAL (CARD)
-       ========================= */
+    /*CAIXA PRINCIPAL*/
+    
     .container {
       background: rgba(0,0,0,0.3);
       padding: 25px;
@@ -43,9 +33,7 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
-    /* =========================
-       TEXTOS
-       ========================= */
+    /*TEXTOS*/
     h1 {
       font-size: 1.8em; /* Levemente menor para celular */
       line-height: 1.3;
@@ -56,9 +44,7 @@
       margin: 12px 0;
     }
 
-    /* =========================
-       BOTÃO
-       ========================= */
+    /*BOTÃO*/
     button {
       width: 100%; /* Botão ocupa toda largura no celular */
       padding: 12px;
@@ -76,18 +62,14 @@
       background: #ff1e3c;
     }
 
-    /* =========================
-       ELEMENTO ESCONDIDO
-       ========================= */
+    /*ELEMENTO ESCONDIDO*/
     .hidden {
       display: none;
       margin-top: 20px;
       animation: fadeIn 1s ease-in-out;
     }
 
-    /* =========================
-       ANIMAÇÃO
-       ========================= */
+    /*ANIMAÇÃO*/
     @keyframes fadeIn {
       from { 
         opacity: 0;
@@ -99,12 +81,10 @@
       } 
     }
 
-    /* =========================
-       AJUSTES PARA TELAS MAIORES
-       ========================= */
+    /*AJUSTES PARA TELAS MAIORES*/
     @media (min-width: 768px) {
       h1 {
-        font-size: 2.2em; /* Maior em tablets/desktop */
+        font-size: 2.2em; /* Maior em desktop */
       }
 
       p {
@@ -120,12 +100,10 @@
 </head>
 <body>
 
-  <!-- =========================
-       CONTEÚDO PRINCIPAL
-       ========================= -->
+  <!-- CONTEÚDO PRINCIPAL -->
   <div class="container">
 
-    <!-- Título da página (mensagem principal) -->
+    <!-- Título da página -->
     <h1>Feliz Aniversário de Namoro ❤️</h1>
 
     <!-- Pequena introdução -->
@@ -134,10 +112,9 @@
     <!-- Botão que dispara uma ação em JavaScript -->
     <button onclick="mostrarMensagem()">Clique aqui 💌</button>
 
-    <!--
-      Essa parte começa escondida (classe 'hidden')
-      Ela só aparece quando o botão é clicado
-    -->
+    <!-- Essa parte começa escondida (classe 'hidden')
+      Ela só aparece quando o botão é clicado -->
+    
     <div id="mensagem" class="hidden">
       <p>Desde que você entrou na minha vida, tudo ficou mais bonito.</p>
       <p>Eu te amo mais a cada dia! 💖</p>
@@ -146,9 +123,7 @@
   </div>
 
   <script>
-    /* =========================
-       FUNÇÃO JAVASCRIPT
-       ========================= */
+    /*FUNÇÃO JAVASCRIPT*/
 
     function mostrarMensagem() {
       const elemento = document.getElementById('mensagem');
@@ -158,3 +133,4 @@
 
 </body>
 </html>
+
